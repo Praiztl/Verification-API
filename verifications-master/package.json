@@ -1,0 +1,24 @@
+{
+  "name": "shyntech-api-verifications",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel ./src --presets babel-preset-es2015 --out-dir dist",
+    "prebuild": "rm -rfv dist && mkdir dist",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "author": "Jawad A Bashorun",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "",
+    "@shyntech/controllers-authentications": "file:../authentications",
+    "@shyntech/controllers-userprofiles": "file:../userprofiles",
+    "@shyntech/controllers-registrations": "file:../registrations"
+  }
+}
