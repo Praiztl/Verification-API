@@ -16,9 +16,7 @@
   "author": "Jawad A Bashorun",
   "license": "MIT",
   "dependencies": {
-    "nodemailer": "",
-    "@shyntech/controllers-authentications": "file:../authentications",
-    "@shyntech/controllers-userprofiles": "file:../userprofiles",
-    "@shyntech/controllers-registrations": "file:../registrations"
+    "nodemailer": "^6.9.7"
+ 
   }
 }

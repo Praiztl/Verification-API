@@ -1,26 +1,18 @@
-import DBControllers from '@shyntech/controllers-dbcontrollers';
-import Authentications from '@shyntech/controllers-authentications';
-import UserProfiles from '@shyntech/controllers-userprofiles';
-import Registrations from '@shyntech/controllers-registrations';
-//import nodemailer from "nodemailer";
+
+import nodemailer from "nodemailer";
 
 
-const FROM='"Jawad Bashorun 👻" <jaybashorun@gmail.com>';
+const FROM='"Tochukwu chikezie " <tochukwueagles7@gmail.com>';
 const REDIRECT_URL="http://localhost:3000/verifications";
 const SUBJECT="VoiceTome Account Verification";
 
 
 
 
-
-
-
-
-export default class Verifications extends DBControllers{
+export default class Verifications {
+	static async getTestAccount() {
 	
-
-	static async getTestAccount(){
-		return nodemailer.createTestAccount();
+	  return nodemailer.createTestAccount();
 	}
 
 
