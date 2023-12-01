@@ -1,0 +1,101 @@
+## ShynTech Verification API
+
+Welcome to the ShynTech Verification API! This API provides functionality for  verification in the ShynTech system.
+
+### Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the API](#running-the-api)
+- [Usage](#usage)
+- [Example Requests](#example-requests)
+- [Example Responses](#example-responses)
+
+---
+
+### Prerequisites
+
+Before you begin, ensure you have the following:
+
+- [Node.js](https://nodejs.org/) installed on your machine.
+- [MongoDB](https://www.mongodb.com/) set up with a database for the ShynTech system.
+
+---
+
+### Installation
+
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone <repository>
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd shyntech-verification-api
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+
+
+---
+
+### Running the API
+
+To start the API server, run:
+
+```bash
+npm start
+```
+
+The server will start on the specified port (default is 3002). You should see a message like "Verification Server started on port 3002."
+
+---
+
+### Usage
+
+The API provides endpoints for email verification. Make requests to these endpoints as needed for your verification process.
+
+---
+
+### Example Requests
+
+Here are examples of how to make requests to the API:
+
+- **Verify Email:**
+
+  ```bash
+  curl -X POST http://localhost:3002/verify-email -d '{"email": "user@example.com"}' -H 'Content-Type: application/json'
+  ```
+
+---
+
+### Example Responses
+
+Here are examples of the expected responses from the API:
+
+- **Successful Email Verification:**
+
+  ```json
+  {
+    "success": true,
+    "message": "Email successfully verified"
+  }
+  ```
+
+- **Failed Email Verification:**
+
+  ```json
+  {
+    "success": false,
+    "message": "Email verification failed. Invalid token."
+  }
+  ```
+
+---
